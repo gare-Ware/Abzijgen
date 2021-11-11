@@ -12,37 +12,45 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@900&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<title>COMING SOON</title>
+	<title>ABZIJGEN ORGANIC CBD</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<section>
-		<div class="container">
-			<div class="split">
-				<div>
-					<h1 class="coming-soon">COMING SOON...</h1>
-					<h3 class="abzijgen-subhead">✶ ABZIJGEN ORGANIC CBD ✶</h3>
-					<form class="email-form" action="https://formsubmit.co/abzijgen036@gmail.com" method="POST">
-					     <input type="email" class="email-input" name="email" placeholder="enter email"required>
-					     <input type="hidden" name="_next" value="https://abzijgen.com/thankyou.html">
-					     <button type="get-notified" class="get-notified">GET NOTIFIED</button>
-					</form>
-					<a class="email-button" href="mailto:abzijgen036@gmail.com">or send us an email</a>
-				</div>
-				<div>
-					<img src="abzijgen-ss-logo.jpg" alt="Abzijgen organic cbd logo">
-					<form class="email-form-mobile" action="https://formsubmit.co/abzijgen036@gmail.com" method="POST">
-					     <input type="email" class="email-input" name="email" placeholder="enter email"required>
-					     <input type="hidden" name="_next" value="https://abzijgen.com/thankyou.html">
-					     <button type="get-notified" class="get-notified-mobile">GET NOTIFIED</button>
-					</form>
-					<a class="email-button-mobile" href="mailto:abzijgen036@gmail.com">or send us an email</a>
-				</div>
-			</div>
-		</div>
-	</section>
+    <main class="container">
+        <section id="comingSoon" class="coming-soon">
+            <h1 class="mainHeader">COMING <span id="soon">SOON</span></h1>
+            <h2 class="smallHeader">✶ ABZIJGEN ORGANIC CBD ✶</h2>
+            <img class="label-logo" src="abzijgen-ss-logo.jpg" alt="Abzijgen organic cbd logo">
+            <form id="emailForm" class="email-form" action="https://formsubmit.co/abzijgen036@gmail.com" method="POST">
+                <input class="mobileInput" type="email" name="emailAddress" placeholder="enter email"required>
+                <input type="hidden" name="_next" value="https://abzijgen.com/thankyou.html">
+                <button type="submit" class="btn">GET NOTIFIED</button>
+            </form>
+            <a id="email-us" href="mailto:abzijgen036@gmail.com">or send us an email</a>
+        </section>
+        <section class="large-screen">
+            <img class="label-logo-large-screen" src="abzijgen-ss-logo.jpg" alt="Abzijgen organic cbd logo">
+        </section>
+    </main>
+    <!-- <script>
+        let emailForm = document.getElementById("emailForm")
+        emailForm.addEventListener("submit", event => {
+            // event.preventDefault()
+            document.body.appendChild(emailForm)
+            let ourFormData = new FormData(event.target)
+            let userEmailAddress = ourFormData.get("emailAddress")
+            let comingSoonSection = document.getElementById("comingSoon")
+            comingSoonSection.innerHTML = `
+                <h1 class="mainHeader">THANK YOU & <span id="gzhemnedo">GZHEMNEDO</span> BLESS</h1>
+                <p class="tyHeaderSmall" >✶ We will email ${userEmailAddress} when our CBD is ready for launch ✶</p>
+            `
+            if (screen.width < 1000) {
+                comingSoonSection.innerHTML += `<img class="label-logo" src="abzijgen-ss-logo.jpg" alt="Abzijgen Organic CBD label">`
+            }
+        })
+    </script> -->
 </body>
 
 </html>
