@@ -175,10 +175,14 @@ input {
 
     .label-logo-large-screen {
         width: 100%;
-        border: solid 20px #95c368;
+        border-radius: 20px;
         padding: 30px;
-        border-radius: 12px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 20px #95c368;
+    }
+
+    .label-logo-large-screen-2 {
+        width: 100%;
+        border-radius: 20px;
     }
 
     .btn:hover, .btn:focus {
