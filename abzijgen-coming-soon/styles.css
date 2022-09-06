@@ -108,17 +108,20 @@ input {
 
 .social-icons {
     display: flex;
-    width: 100%;
     justify-content: center;
     font-size: 2rem;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
 }
 .social-icons a {
     color: #333333;
 }
-
 .social-icons a:not(:last-child) {
     margin-right: .5em;
+}
+@media (min-width: 1000px) {
+    .social-icons {
+        margin-bottom: .2rem;
+    }
 }
 
 #email-us {
