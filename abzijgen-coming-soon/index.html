@@ -15,6 +15,7 @@
 	<title>ABZIJGEN | Organic CBD</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/57a54c8093.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,40 +23,29 @@
         <section id="comingSoon" class="coming-soon">
             <h1 class="mainHeader"><span class="website">WEBSITE</span>COMING <span id="soon">SOON</span></h1>
             <h2 class="smallHeader">✶ ABZIJGEN ORGANIC CBD ✶</h2>
-            <img class="label-logo" src="abzijgen-card-front.jpg" alt="Abzijgen organic cbd logo">
+            <img class="label-logo" src="images/abzijgen-card-front.jpg" alt="Abzijgen organic cbd logo">
+            <div>
+                
+            </div>
             <form id="emailForm" class="email-form" action="https://formsubmit.co/abzijgen036@gmail.com" method="POST">
                 <input class="mobileInput" type="email" name="emailAddress" placeholder="enter email"required>
                 <input type="hidden" name="_next" value="https://abzijgen.com/thankyou.html">
                 <button type="submit" class="btn">GET NOTIFIED</button>
             </form>
-            <a class="btn fb" href="https://www.facebook.com/abzijgen">Find us on facebook</a>
+            <!-- <a class="btn fb" href="https://www.facebook.com/abzijgen">Find us on facebook</a> -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/abzijgen/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.facebook.com/abzijgen"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
             <a id="email-us" href="mailto:abzijgen036@gmail.com">or send us an email</a>
         </section>
         <section class="large-screen">
             <div class="label-logo-large-screen">
-                <img class="label-logo-large-screen-2" src="abzijgen-card-front.jpg" alt="Abzijgen organic cbd logo">
+                <img class="label-logo-large-screen-2" src="images/abzijgen-card-front.jpg" alt="Abzijgen organic cbd logo">
             </div>
         </section>
     </main>
-
-    <!-- JS code for changing site after form submission. Does not work with FormSubmit. -->
-    <!-- <script>
-        let emailForm = document.getElementById("emailForm")
-        emailForm.addEventListener("submit", event => {
-            // event.preventDefault()
-            document.body.appendChild(emailForm)
-            let ourFormData = new FormData(event.target)
-            let userEmailAddress = ourFormData.get("emailAddress")
-            let comingSoonSection = document.getElementById("comingSoon")
-            comingSoonSection.innerHTML = `
-                <h1 class="mainHeader">THANK YOU & <span id="gzhemnedo">GZHEMNEDO</span> BLESS</h1>
-                <p class="tyHeaderSmall" >✶ We will email ${userEmailAddress} when our CBD is ready for launch ✶</p>
-            `
-            if (screen.width < 1000) {
-                comingSoonSection.innerHTML += `<img class="label-logo" src="abzijgen-ss-logo.jpg" alt="Abzijgen Organic CBD label">`
-            }
-        })
-    </script> -->
+    <script src="index.js"></script>
 </body>
 
 </html>
