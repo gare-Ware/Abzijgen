@@ -1,8 +1,8 @@
-// grab buttons
-const prevBtnSm = document.getElementById('prevBtnSm')
-const nextBtnSm = document.getElementById('nextBtnSm')
-const prevBtnLg = document.getElementById('prevBtnLg')
-const nextBtnLg = document.getElementById('nextBtnLg')
+// grab elements
+// const prevBtnSm = document.getElementById('prevBtnSm')
+// const nextBtnSm = document.getElementById('nextBtnSm')
+// const prevBtnLg = document.getElementById('prevBtnLg')
+// const nextBtnLg = document.getElementById('nextBtnLg')
 const mobileImgs = document.getElementsByClassName('imgs')
 const desktopImgs = document.getElementsByClassName('imgs-large')
 const desktopImgContainer = document.getElementById('large-screen-imgs')
@@ -27,8 +27,8 @@ const getNext = () => {
 
 // init pics & buttons
 const pics = getPics()
-const prevBtn = getPrev()
-const nextBtn = getNext()
+// const prevBtn = getPrev()
+// const nextBtn = getNext()
 
 let currentPic = 0
 
@@ -60,10 +60,8 @@ const prevPic = () => {
 // init displayed pic
 displayPic(currentPic)
 
-prevBtn.addEventListener('click', nextPic)
-nextBtn.addEventListener('click', nextPic)
+// prevBtn.addEventListener('click', prevPic)
+// nextBtn.addEventListener('click', nextPic)
 
 // change pic every 3 seconds
-setInterval(()=>{
-    nextPic()
-}, 3000)
+setInterval(()=>nextPic(), 3000)

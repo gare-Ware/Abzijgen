@@ -77,6 +77,10 @@ body {
     position: relative;
 }
 
+.label-logo-large-screen img {
+    object-fit: cover;
+}
+
 #prevBtnSm, #nextBtnSm, #prevBtnLg, #nextBtnLg {
     border: none;
     background-color: transparent;
